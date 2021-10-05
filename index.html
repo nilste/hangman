@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Hangman</h1>
+        </header>
+        <main>
+            <canvas id="hangman" width="500" height="300">
+                Drawing of hangman progress
+            </canvas>
+
+            <p id="word">
+                <span>W</span>
+                <span>E</span>
+                <span>L</span>
+                <span>C</span>
+                <span>O</span>
+                <span>M</span>
+                <span>E</span>
+            </p>
+            <div id="letters">
+                <button type="button" value="a" disabled>A</button>
+                <button type="button" value="b" disabled>B</button>
+                <button type="button" value="c" disabled>C</button>
+                <button type="button" value="d" disabled>D</button>
+                <button type="button" value="e" disabled>E</button>
+                <button type="button" value="f" disabled>F</button>
+                <button type="button" value="g" disabled>G</button>
+                <button type="button" value="h" disabled>H</button>
+                <button type="button" value="i" disabled>I</button>
+                <button type="button" value="j" disabled>J</button>
+                <button type="button" value="k" disabled>K</button>
+                <button type="button" value="l" disabled>L</button>
+                <button type="button" value="m" disabled>M</button>
+                <button type="button" value="n" disabled>N</button>
+                <button type="button" value="o" disabled>O</button>
+                <button type="button" value="p" disabled>P</button>
+                <button type="button" value="q" disabled>Q</button>
+                <button type="button" value="r" disabled>R</button>
+                <button type="button" value="s" disabled>S</button>
+                <button type="button" value="t" disabled>T</button>
+                <button type="button" value="u" disabled>U</button>
+                <button type="button" value="v" disabled>V</button>
+                <button type="button" value="w" disabled>W</button>
+                <button type="button" value="x" disabled>X</button>
+                <button type="button" value="y" disabled>Y</button>
+                <button type="button" value="z" disabled>Z</button>
+            </div>
+            <button id="new-game" type="button">New Game</button>
+        </main>
+    </div>
+    <div id="splash">
+        <div id="splash-content">
+            <h2 id="headline">Headline</h2>
+            <p id="message">Dummy text</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+#wrapper {
+    width: 50rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#word {
+
+  margin: 2rem 0;
+}
+
+#word span {
+  font-size: 4rem;
+  border-bottom: .2rem solid black;
+  display: inline-block;
+  width: 3.6rem;
+  height: 4.5rem;
+  margin: 0 .8rem;
+  text-transform: uppercase;
+}
+
+#word span:empty:before {
+  content: "\200b";
+}
+
+#letters {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+#letters button {
+  width: 2.8rem;
+  margin: .5rem .5rem;
+  font-size: 2.2rem;
+  border: .1rem solid #cdcdcd;
+  border-radius: .4rem;
+  padding: .1rem;
+}
+
+#letters button:disabled {
+  opacity: .5;
+}
+
+#new-game {
+  margin-top: 4rem;
+  padding: .3rem;
+}
+
+#splash {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+#splash-content {
+  text-align: center;
+  margin: 40vh auto;
+  font-size: 3rem;
+  line-height: 5rem;
+}
+
+canvas {
+  border: 1px solid black;
+}
